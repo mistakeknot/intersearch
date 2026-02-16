@@ -1,0 +1,17 @@
+{
+  "name": "intersearch",
+  "version": "0.1.1",
+  "description": "Shared embedding and search infrastructure for the Interverse ecosystem — sentence-transformer embeddings and Exa web search.",
+  "author": {
+    "name": "mistakeknot"
+  },
+  "license": "MIT",
+  "keywords": [
+    "embeddings",
+    "search",
+    "exa",
+    "sentence-transformers",
+    "shared-library",
+    "infrastructure"
+  ]
+}
