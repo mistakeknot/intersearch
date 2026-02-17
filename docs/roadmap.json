@@ -1,0 +1,15 @@
+{
+  "module_summary": "Intersearch underpins semantic search and Exa-backed discovery shared across Interverse modules.",
+  "roadmap": {
+    "now": [
+      {"id": "ISEA-N1", "title": "Increase recall/precision quality on mixed-repo retrieval in low-token contexts.", "priority": "P1"}
+    ],
+    "next": [
+      {"id": "ISEA-N2", "title": "Add index freshness controls and fallback behavior for degraded providers.", "priority": "P2"},
+      {"id": "ISEA-N3", "title": "Document query optimization patterns for flux-drive and intersearch clients.", "priority": "P2"},
+      {"id": "ISEA-L1", "title": "Add retrieval quality benchmarking and adaptive ranking feedback loops.", "priority": "P2"}
+    ],
+    "later": [
+    ]
+  }
+}
