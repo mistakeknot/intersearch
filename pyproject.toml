@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "intersearch"
-version = "0.1.0"
+version = "0.2.0"
 description = "Shared search and embedding infrastructure for the Interverse ecosystem"
 license = "MIT"
 requires-python = ">=3.10"
@@ -13,9 +13,14 @@ authors = [
 ]
 dependencies = [
     "aiohttp>=3.9",
+    "einops>=0.7",
+    "mcp>=1.0",
     "numpy>=1.26",
-    "sentence-transformers>=2.0",
+    "sentence-transformers>=2.7",
 ]
+
+[project.scripts]
+intersearch-mcp = "intersearch.server:cli_main"
 
 [project.optional-dependencies]
 test = ["pytest>=8.0", "pytest-asyncio>=0.23"]

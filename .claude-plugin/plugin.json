@@ -1,7 +1,7 @@
 {
   "name": "intersearch",
-  "version": "0.1.1",
-  "description": "Shared embedding and search infrastructure for the Interverse ecosystem — sentence-transformer embeddings and Exa web search.",
+  "version": "0.2.0",
+  "description": "Shared embedding and search infrastructure for the Interverse ecosystem — sentence-transformer embeddings, persistent vector store, and Exa web search.",
   "author": {
     "name": "mistakeknot"
   },
@@ -11,7 +11,20 @@
     "search",
     "exa",
     "sentence-transformers",
+    "semantic-search",
+    "vector-store",
     "shared-library",
     "infrastructure"
-  ]
+  ],
+  "mcpServers": {
+    "intersearch": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "${CLAUDE_PLUGIN_ROOT}",
+        "run",
+        "intersearch-mcp"
+      ]
+    }
+  }
 }
