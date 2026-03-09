@@ -24,6 +24,10 @@ Python MCP server at `src/intersearch/server.py`. Run with `uv run intersearch-m
 | `embedding_index` | Index files for semantic search (incremental, SHA256-based dedup) |
 | `embedding_query` | Semantic search across indexed files (cosine similarity ranking) |
 
+## Session Search Skill
+
+`/intersearch:session-search` — wraps [cass](https://github.com/Dicklesworthstone/coding_agent_session_search) for session search, timeline, context, export, and analytics across 15 agent providers. Requires `cass >= 0.2.0` (`~/.local/bin/cass`).
+
 ## Storage
 
 Per-project embeddings stored at `~/.intersearch/index/<project-hash>/embeddings.db`.

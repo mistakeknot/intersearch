@@ -16,6 +16,9 @@
     "shared-library",
     "infrastructure"
   ],
+  "skills": [
+    "./skills/session-search"
+  ],
   "mcpServers": {
     "intersearch": {
       "command": "uv",
