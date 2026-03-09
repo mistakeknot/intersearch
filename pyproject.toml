@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "intersearch"
-version = "0.2.0"
+version = "0.2.1"
 description = "Shared search and embedding infrastructure for the Interverse ecosystem"
 license = "MIT"
 requires-python = ">=3.10"
