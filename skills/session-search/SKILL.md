@@ -1,6 +1,6 @@
 ---
 name: session-search
-description: Search past agent sessions, view timelines, find sessions by file, export transcripts, and analyze token/tool/model usage. Delegates to cass (Rust-native, sub-60ms, 15 agent providers). Use when the user asks "what did I work on?", "find sessions about X", "show session stats", "what sessions touched this file?", "export this session", or "show token analytics".
+description: Search past agent sessions, view timelines, find sessions by file, export transcripts, and analyze token/tool/model usage. Delegates to cass. Use when the user asks "what did I work on?", "find sessions about X", or "show token analytics".
 user_invocable: true
 ---
 
