@@ -1,0 +1,33 @@
+{
+  "name": "intersearch",
+  "version": "0.2.2",
+  "description": "Shared embedding and search infrastructure for the Interverse ecosystem — sentence-transformer embeddings, persistent vector store, and Exa web search.",
+  "license": "MIT",
+  "keywords": [
+    "embeddings",
+    "search",
+    "exa",
+    "sentence-transformers",
+    "semantic-search",
+    "vector-store",
+    "shared-library",
+    "infrastructure"
+  ],
+  "author": "mistakeknot",
+  "interface": {
+    "displayName": "intersearch",
+    "shortDescription": "Shared embedding and search infrastructure for the Interverse ecosystem — sentence-transformer embeddings, persistent..."
+  },
+  "skills": "./skills/",
+  "mcpServers": {
+    "intersearch": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "${KIMI_PLUGIN_ROOT}",
+        "run",
+        "intersearch-mcp"
+      ]
+    }
+  }
+}
