@@ -24,9 +24,14 @@ Python MCP server at `src/intersearch/server.py`. Run with `uv run intersearch-m
 | `embedding_index` | Index files for semantic search (incremental, SHA256-based dedup) |
 | `embedding_query` | Semantic search across indexed files (cosine similarity ranking) |
 
-## Session Search Skill
+## Session Skills
 
-`/intersearch:session-search` — wraps [cass](https://github.com/Dicklesworthstone/coding_agent_session_search) for session search, timeline, context, export, and analytics across 15 agent providers. Requires `cass >= 0.2.0` (`~/.local/bin/cass`).
+Two skills, deliberately split by question:
+
+- `/intersearch:session-search` — session **content**. Wraps [cass](https://github.com/Dicklesworthstone/coding_agent_session_search) for search, timeline, context, export, and analytics across 15 agent providers. Requires `cass >= 0.2.0` (`~/.local/bin/cass`). Answers "what did I discuss about X".
+- `/intersearch:session-resume` — session **resumability**. Finds the resumable session id for a project and the cwd required to resume it, filters out subagent transcripts, and relocates sessions between cwd scopes. No external dependency. Answers "what can I resume, and how".
+
+`claude --resume <id>` is cwd-scoped, so a session id is only actionable alongside its directory — see `skills/session-resume/references/session-storage.md`.
 
 ## Storage
 

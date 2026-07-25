@@ -1,7 +1,7 @@
 {
   "name": "intersearch",
   "version": "0.2.2",
-  "description": "Shared embedding and search infrastructure for the Interverse ecosystem — sentence-transformer embeddings, persistent vector store, and Exa web search.",
+  "description": "Shared embedding and search infrastructure for the Interverse ecosystem \u2014 sentence-transformer embeddings, persistent vector store, and Exa web search.",
   "author": {
     "name": "mistakeknot"
   },
@@ -17,7 +17,8 @@
     "infrastructure"
   ],
   "skills": [
-    "./skills/session-search"
+    "./skills/session-search",
+    "./skills/session-resume"
   ],
   "mcpServers": {
     "intersearch": {
