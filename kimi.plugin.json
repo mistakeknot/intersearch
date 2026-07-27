@@ -1,6 +1,6 @@
 {
   "name": "intersearch",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Shared embedding and search infrastructure for the Interverse ecosystem — sentence-transformer embeddings, persistent vector store, and Exa web search.",
   "license": "MIT",
   "keywords": [
