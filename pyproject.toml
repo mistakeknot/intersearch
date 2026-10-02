@@ -30,3 +30,4 @@ packages = ["src/intersearch"]
 
 [tool.pytest.ini_options]
 asyncio_mode = "strict"
+pythonpath = ["src"]
